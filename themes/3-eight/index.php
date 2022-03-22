@@ -75,7 +75,7 @@ foreach ( $plugins as $plugin ) :
 					<li><a class="button<# if ( !data.isActive ) { #> button-primary<# } #>" href="{{{ data.ActionLink }}}">{{ data.ActionLinkText }}</a></li>
 					<# if ( data.PluginLink ) { #>
 						<li>
-							<a href="{{ data.PluginLink }}" target="_blank" title="<?php _e('Learn more about the plugin', 'wmd_prettyplugins') ?>"><?php echo stripslashes($this->options['plugins_link_label']); ?></a>
+							<a href="{{ data.PluginLink }}" target="_blank" title="<?php _e('Erfahre mehr über das Plugin', 'wmd_prettyplugins') ?>"><?php echo stripslashes($this->options['plugins_link_label']); ?></a>
 						</li>
 					<# } #>
 					<# if ( data.ActionsValues ) { #>
@@ -85,13 +85,13 @@ foreach ( $plugins as $plugin ) :
 			</div>
 			<div class="desc column-description">
 				<p class="p-desc">{{{ data.Description }}}</p>
-				<a class="show-more-button" href="#"><?php _e('Show more', 'wmd_prettyplugins') ?></a>
+				<a class="show-more-button" href="#"><?php _e('Zeige mehr', 'wmd_prettyplugins') ?></a>
 			</div>
 		</div>
 		<?php /*
 		<# if ( data.CategoriesNames ) { #>
 			<div class="plugin-card-bottom">
-				<strong><?php _e('Categories: ', 'wmd_prettyplugins') ?></strong> {{ data.CategoriesNames.join(', ') }}
+				<strong><?php _e('Kategorien: ', 'wmd_prettyplugins') ?></strong> {{ data.CategoriesNames.join(', ') }}
 			</div>
 		<# } #> */?>
 	</div>
