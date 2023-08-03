@@ -1,6 +1,4 @@
 <div class="wrap">
-	<?php screen_icon('plugins'); ?>
-
 	<!-- Begin feedback notice. Used for the new Plugin's interface. Remove once the recollection of feedback is closed. -->
 	<!--<div class="updated notice">
     <p>Web Publishing has redesigned the Plugin interface. We would like to receive your feedback! <a class="button button-primary button-large" style="color: white; text-decoration: none; pointer: cursor;" href="https://goo.gl/forms/sjuLfJ34NhfI3r2D2">Submit feedback</a></p>
@@ -9,6 +7,7 @@
 
 	<h1><?php echo stripslashes($this->options['plugins_page_title']); ?></h1>
 	<p><?php echo stripslashes($this->options['plugins_page_description']); ?></p>
+	<span class="dashicons dashicons-admin-plugins"></span>
 
 	<!-- Begin Category Menu -->
 	<div id="current-theme" class="wp-filter plugin-categories">

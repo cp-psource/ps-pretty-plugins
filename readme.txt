@@ -57,6 +57,10 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 = 1.6.4 = DerN3rd =
 
+* Entfernt: Screen icon
+
+= 1.6.4 = DerN3rd =
+
 * Aktuelle Version des PSOURCE Updaters
 
 = 1.6.3 = DerN3rd =
