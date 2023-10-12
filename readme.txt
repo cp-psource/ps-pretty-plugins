@@ -59,6 +59,7 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 * Entfernt: Screen icon
 * Fix: Array to string conversion
+* Fix: uasort(): Returning bool
 
 = 1.6.4 = DerN3rd =
 
