@@ -75,8 +75,8 @@
 						<p>
 							<?php
 								// strip plugin's excessive text to avoid text overflow
-								$description_trimmed = wp_trim_words( $plugin['Description'], $num_words = 35, $more = null );
-								echo $description_trimmed ;
+								$description_trimmed = wp_trim_words($plugin['Description'], $num_words = 35, $more = null);
+								echo $description_trimmed;
 							?>
 					</p>
 
@@ -94,10 +94,10 @@
 
 							<!-- Additional action links thrown by some plugins. -->
 							<?php
-							foreach ($plugin['Actions'] as $action)
-							echo '<span class="material-button button button-large"><a aria-label="Action link button" href="' . $plugin['Actions'] . '" >' . $action . '</a></span>';
+							foreach ($plugin['Actions'] as $action) {
+								echo '<span class="material-button button button-large"><a aria-label="Action link button" href="' . esc_url($action) . '">' . esc_html($action) . '</a></span>';
+							}
 							?>
-
 					</div>
 				</div>
 			</div>

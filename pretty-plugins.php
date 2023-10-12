@@ -478,16 +478,22 @@ class WMD_PrettyPlugins extends WMD_PrettyPlugins_Functions {
 			$this->plugins_data[$plugin_path] = apply_filters('wmd_prettyplugins_plugins_data', $plugin_prepare);
 		}
 
-		uasort($this->plugins_data, array($this,'compare_by_name'));
+		uasort($this->plugins_data, array($this, 'compare_by_name'));
 
 		$search = isset($_GET['search']) ? $_GET['search'] : (isset($_GET['plugin-search']) ? $_GET['plugin-search'] : '');
 		$category = isset($_GET['category']) ? $_GET['category'] : (isset($_GET['plugin-category']) ? $_GET['plugin-category'] : '');
 		$plugin = isset($_GET['plugin']) ? $_GET['plugin'] : '';
-
-		if($fe)
+		
+		if ($fe) {
 			$categories = array_merge(array('all' => __( 'Alle', 'wmd_prettyplugins' )), $plugins_categories);
-		else
+		} else {
 			$categories = array_merge(array('all' => __( 'Alle', 'wmd_prettyplugins' ), 'active' => __( 'Aktiv', 'wmd_prettyplugins' ), 'inactive' => __( 'Inaktiv', 'wmd_prettyplugins' )), $plugins_categories);
+		}
+		
+		// Vergleichsfunktion, die Integer-Werte zurückgibt
+		function compare_by_name($a, $b) {
+			return strnatcasecmp($a['name'], $b['name']);
+		}
 
 		wp_localize_script($script_name, '_wpPluginsSettings', array(
 			'plugins'   => array_values($this->plugins_data),
