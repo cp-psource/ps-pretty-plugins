@@ -607,7 +607,7 @@ plugins.Run = {
 jQuery( document ).ready(
 
   // Bring on the plugins
-  _.on( plugins.Run.init, plugins.Run )
+  _.bind( plugins.Run.init, plugins.Run )
 
 );
 

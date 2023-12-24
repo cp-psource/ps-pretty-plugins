@@ -625,7 +625,7 @@ jQuery(document).ready( function($) {
 console.log(plugins);
     // Update the URL hash
     if ( category ) {
-      _.on( plugins.doCategory, category );
+      _.bind( plugins.doCategory, category );
       //wp.plugins.view.Categories.collection.doCategory( category );
       wp.plugins.router.navigate( wp.plugins.router.baseUrl( '&category=' + category ), { replace: true } );
     }
