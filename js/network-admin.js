@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
 	holder.on( 'click', 'a.add-category-show-form', function(event) {
 		event.preventDefault();
 
-		jQuery(this).parent().siblings( ".plugin-category-add-edit-holder" ).toggle().find('.plugin_new_category').focus();
+		jQuery(this).parent().siblings( ".plugin-category-add-edit-holder" ).toggle().find('.plugin_new_category').trigger("focus");
 
 		return false;
 	});
@@ -138,7 +138,7 @@ jQuery(document).ready(function() {
 
 		plugin_category_div.find('.edit-category, .edit-category-save-button').show();
 		plugin_category_div.find('.edit-category-name').text('"'+category_name+'"');
-		plugin_category_div.find('.plugin-category-add-edit-holder').show().find('.plugin-new-edit-category').val(category_name).focus();
+		plugin_category_div.find('.plugin-category-add-edit-holder').show().find('.plugin-new-edit-category').val(category_name).trigger("focus");
 
 		plugin_category_div.find('.plugin-edit-category-key').val(category_id);
 
