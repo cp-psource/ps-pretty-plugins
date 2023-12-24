@@ -2,70 +2,70 @@
 
 Verleihe Deinen Plugin-Seiten in Multisite-Netzwerken das Aussehen eines App Stores mit ausgewählten Bildern, Kategorien und einer erstaunlichen Suche.
 
-## Mit Pretty Plugins können Sie Plugins in Kategorien gruppieren, ihnen auffällige Funktionsbilder geben und sie in einem benutzerfreundlichen Raster anzeigen.
+## Mit Pretty Plugins kannst Du Plugins in Kategorien gruppieren, ihnen auffällige Funktionsbilder geben und sie in einem benutzerfreundlichen Raster anzeigen.
 
-Machen Sie das Finden und Installieren von Plugins zum Kinderspiel. Pretty Plugins ist ein unverzichtbares Tool für jeden Netzwerkbesitzer. Es bietet eine zentrale Steuerung und Konfiguration der Plugins-Seite jeder Website. Kombinieren Sie es mit [Pro Sites](http://premium.wpmudev.org/project/pro-sites/ „Lesen Sie mehr über das Pro Sites-Plugin“), um einen fantastischen kostenpflichtigen Plugin-Shop zu erstellen.
+Mache das Finden und Installieren von Plugins zum Kinderspiel. PS-Pretty Plugins ist ein unverzichtbares Tool für jeden Netzwerkbesitzer. Es bietet eine zentrale Steuerung und Konfiguration der Plugins-Seite jeder Webseite. Kombiniere es mit [PS Bloghosting](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/ „Erfahre mehr über das PS Bloghosting-Plugin“), um einen fantastischen kostenpflichtigen Plugin-Shop zu erstellen.
 
 Große Symbole und ein vertrautes Rasterlayout sorgen für ein optisch weitaus ansprechenderes Layout im Vergleich zum standardmäßigen Basiseintrag.
 
-![Screengrab der Plugins-Seite mit dem Rasterlayout](http://premium.wpmudev.org/wp-content/uploads/2013/11/prettyplugins-ss12.jpg)
+![Screenshot der Plugins-Seite mit dem Rasterlayout](https://n3rds.work/wp-content/uploads/2023/12/prettyplugins-ss12.jpg)
 
   Große Symbole und ein Rasterlayout machen das Entdecken von Plugins zum Kinderspiel
 
-  Plugins können in mehrere Kategorien gruppiert werden, die vom Netzwerkadministrator definiert werden, was es Websitebesitzern erleichtert, neue Funktionen zu entdecken und zu installieren.
+  Plugins können in mehrere Kategorien gruppiert werden, die vom Netzwerkadministrator definiert werden, was es Webseitenbesitzern erleichtert, neue Funktionen zu entdecken und zu installieren.
 
-![Screengrab der Plugin-Kategorien](http://premium.wpmudev.org/wp-content/uploads/2013/11/prettyplugins-ss2.jpg)
+![Screenshot der Plugin-Kategorien](https://n3rds.work/wp-content/uploads/2023/12/prettyplugins-ss2.jpg)
 
-  Gruppieren Sie Plugins in Kategorien, um sie leichter finden zu können
+  Gruppiere Plugins in Kategorien, um sie leichter finden zu können
 
   Eine umfassende Einstellungsseite ermöglicht es einem Netzwerkbesitzer, alle Aspekte der Plugins-Seite zu verwalten, einschließlich Titel, Untertitel, Bilder und die Sichtbarkeit von Beschreibungen. Die Einstellungen können sogar exportiert und importiert werden!
 
-![Screengrab der Einstellungsseite](http://premium.wpmudev.org/wp-content/uploads/2013/11/prettyplugins-ss11.jpg)
+![Screenshot der Einstellungsseite](https://n3rds.work/wp-content/uploads/2023/12/prettyplugins-ss11.jpg)
 
-  Konfigurieren Sie alle Aspekte des Verhaltens und Aussehens der Plugins-Seite
+  Konfiguriere alle Aspekte des Verhaltens und Aussehens der Plugins-Seite
 
-  Für jedes Plugin wird eine genauere Steuerung bereitgestellt. Als Netzwerkadministrator können Sie den Plugin-Namen, den Link und die Beschreibung überschreiben – Sie können das Plugin beliebig vielen vorhandenen Kategorien zuweisen oder neue erstellen – und Sie können ein vorgestelltes Bild laden.
+  Für jedes Plugin wird eine genauere Steuerung bereitgestellt. Als Netzwerkadministrator kannst Du den Plugin-Namen, den Link und die Beschreibung überschreiben – Du kannst das Plugin beliebig vielen vorhandenen Kategorien zuweisen oder neue erstellen – und Du kannst ein vorgestelltes Bild laden.
 
-![Screengrab der Plugin-Details-Bearbeitungsfunktion](http://premium.wpmudev.org/wp-content/uploads/2013/11/prettyplugins-ss41.jpg)
+![Screenshot der Plugin-Details-Bearbeitungsfunktion](https://n3rds.work/wp-content/uploads/2023/12/prettyplugins-ss41.jpg)
 
-  Überschreiben Sie alle Plugin-Attribute
+  Überschreibe alle Plugin-Attribute
 
-  Pretty Plugins gibt Ihnen eine beispiellose Kontrolle über das Aussehen und Verhalten der Plugins-Seite und macht es für Websitebesitzer einfacher denn je, ihre Plugins selbst zu verwalten und neue Funktionen zu finden und zu ihrer Website hinzuzufügen.
+  PS Pretty Plugins gibt Dir eine beispiellose Kontrolle über das Aussehen und Verhalten der Plugins-Seite und macht es für Webseitenbesitzer einfacher denn je, ihre Plugins selbst zu verwalten und neue Funktionen zu finden und zu ihrer Webseite hinzuzufügen.
 
 ## Verwendung
 
 ### Für den Anfang
 
-Lesen Sie zunächst den Abschnitt [Plugins installieren](../wpmu-manual/installing-regular-plugins-on-wpmu/) in unserem umfassenden [WordPress- und WordPress-Multisite-Handbuch](https://premium.wpmudev.org/manuals/) ), wenn Sie neu bei WordPress sind. Beachten Sie, dass dieses Plugin nur für Multisite-Installationen konzipiert ist und nicht auf einzelnen Sites funktioniert.
+Wenn Du neu bei Word/ClassicPress bist, Beachte dass dieses Plugin nur für Multisite-Installationen konzipiert ist und nicht auf einzelnen Webseiten funktioniert.
 
 ### Konfigurieren der Einstellungen
 
-Nach der Installation und Aktivierung sehen Sie in Ihrem Menü „Netzwerkeinstellungen“ einen neuen Menüpunkt: Pretty Plugins. Klicken Sie jetzt auf den Menüpunkt Pretty Plugins.
+Nach der Installation und Aktivierung siehst Du in Deinem Menü „Netzwerkeinstellungen“ einen neuen Menüpunkt: PS Pretty Plugins. Klicke jetzt auf den Menüpunkt PS Pretty Plugins.
 
-![pretty-plugins-1000-menu](https://premium.wpmudev.org/wp-content/uploads/2013/11/pretty-plugins-1000-menu.png)
+![pretty-plugins-1000-menu](https://n3rds.work/wp-content/uploads/2023/12/pretty-plugins-1000-menu.png)
 
-  Die Einstellungen sind recht einfach. Aber lassen Sie uns sie trotzdem durchgehen, ja? 
+  Die Einstellungen sind recht einfach. Aber lasse uns sie trotzdem durchgehen, ja? 
 
-![1\. Setup-Modus aktivieren/deaktivieren. 2\. Wählen Sie Ihr bevorzugtes Thema. 3\. Wählen Sie das Ziel des Plugin-Links aus. 4\. Wählen Sie Ihre Screenshot-Einstellungen aus. 5\. Plugin-Beschreibungen ein-/ausblenden. 6\. Passen Sie die Beschriftungen an.](https://premium.wpmudev.org/wp-content/uploads/2013/11/pretty-plugins-1000-settings.png)
+![1\. Setup-Modus aktivieren/deaktivieren. 2\. Wähle Dein bevorzugtes Design. 3\. Wähle das Ziel des Plugin-Links aus. 4\. Wähle Deine Screenshot-Einstellungen aus. 5\. Plugin-Beschreibungen ein-/ausblenden. 6\. Passe die Beschriftungen an.](https://n3rds.work/wp-content/uploads/2023/12/pretty-plugins-1000-settings.png)
 
   1\. Setup-Modus aktivieren/deaktivieren.
-2\. Wählen Sie Ihr bevorzugtes Thema.
-3\. Wählen Sie das Ziel des Plugin-Links aus.
-4\. Wählen Sie Ihre Screenshot-Einstellungen aus.
+2\. Wähle Dein bevorzugtes Design.
+3\. Wähle das Ziel des Plugin-Links aus.
+4\. Wähle Deine Screenshot-Einstellungen aus.
 5\. Plugin-Beschreibungen ein-/ausblenden.
-6\. Passen Sie die Etiketten an.
+6\. Passe die Beschriftungen an.
 
-  1\. Wahrscheinlich möchten Sie _Setup-Modus aktivieren_ auf „True“ gesetzt lassen, während Sie die Dinge konfigurieren.
+  1\. Wahrscheinlich möchtest Du _Setup-Modus aktivieren_ auf „WAHR“ gesetzt lassen, während Du die Dinge konfigurierst.
 
-* Wenn der Setup-Modus aktiviert ist, können Sie beim Aufrufen der Hauptseite nur eine Vorschau anzeigen. Die Unterseiten sind davon nicht betroffen.
-* Sobald Sie fertig und mit Ihrer Konfiguration zufrieden sind, setzen Sie sie auf „False“, um Ihre neue Pretty Plugins-Seite auf allen Unterseiten in Ihrem Netzwerk zu aktivieren.
+* Wenn der Setup-Modus aktiviert ist, kannst Du beim Aufrufen der Hauptseite nur eine Vorschau anzeigen. Die Unterseiten sind davon nicht betroffen.
+* Sobald Du fertig und mit Deiner Konfiguration zufrieden bist, setze sie auf „FFALSCH“, um Deine neue Pretty Plugins-Seite auf allen Unterseiten in Deinem Netzwerk zu aktivieren.
 
-2\. _Theme für Plugin-Seite auswählen_ ist genau das: Sie können das Theme auswählen, das zur Anzeige der verfügbaren Plugins auf allen Unterseiten verwendet wird.
+2\. _Theme für Plugin-Seite auswählen_ ist genau das: Du kannst das Theme auswählen, das zur Anzeige der verfügbaren Plugins auf allen Unterseiten verwendet wird.
 
 * Derzeit ist in diesem Plugin ein Theme enthalten: QuickSand.
-* Um Ihr eigenes benutzerdefiniertes Theme zu erstellen, kopieren Sie einfach das QuickSand-Theme in /pretty-plugins/themes/ und benennen Sie es um. Anschließend können Sie das Layout und das Stylesheet bearbeiten und Ihr benutzerdefiniertes Design in Ihren Ordner /wp-content/uploads/prettyplugins/themes/ hochladen. Es steht dann zur Auswahl zur Verfügung.
+* Um Dein eigenes benutzerdefiniertes Theme zu erstellen, kopiere einfach das QuickSand-Theme in /pretty-plugins/themes/ und benenne es um. Anschließend kannst Du das Layout und das Stylesheet bearbeiten und Dein benutzerdefiniertes Design in Deinen Ordner /wp-content/uploads/prettyplugins/themes/ hochladen. Es steht dann zur Auswahl zur Verfügung.
 
-3\. Um auszuwählen, wohin der Plugin-Link verweist, haben Sie vier Möglichkeiten:
+3\. Um auszuwählen, wohin der Plugin-Link verweist, hast Du vier Möglichkeiten:
 
 * _Plugin-Original-URL_ verweist auf die URL, die der Plugin-Autor in das Plugin eingefügt hat.
 * _Benutzerdefinierte Plugin-URL_ verweist auf die URLs, die Sie für jedes Plugin festgelegt haben (wir werden weiter unten darauf eingehen).

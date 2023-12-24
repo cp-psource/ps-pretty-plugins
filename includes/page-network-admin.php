@@ -12,7 +12,7 @@
 		<table class="form-table">
 			<tr valign="top">
 				<th scope="row">
-					<label for="wmd_prettyplugins_options[setup_mode]"><?php _e('Aktiviere den Setup-Modus', 'wmd_prettyplugins') ?></label>
+					<label for="wmd_prettyplugins_options[setup_mode]"><?php _e('Aktiviere Setup-Modus', 'wmd_prettyplugins') ?></label>
 				</th>
 
 				<td>
@@ -25,7 +25,7 @@
 
 			<tr valign="top">
 				<th scope="row">
-					<label for="wmd_prettyplugins_options[theme]"><?php _e('Wähle eine Darstellung für die Plugin-Seite', 'wmd_prettyplugins') ?></label>
+					<label for="wmd_prettyplugins_options[theme]"><?php _e('Darstellung der Plugin-Seite', 'wmd_prettyplugins') ?></label>
 				</th>
 
 				<td>
