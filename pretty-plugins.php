@@ -3,7 +3,7 @@
 Plugin Name: PS-Pretty Plugins
 Plugin URI: https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/
 Description: Verleihe Deinen Plugin-Seiten in Multisite-Netzwerken das Aussehen eines App Stores mit ausgewählten Bildern, Kategorien und einer erstaunlichen Suche.
-Version: 1.6.5
+Version: 1.6.6
 Network: true
 Text Domain: wmd_prettyplugins
 Author: WMS N@W
