@@ -448,7 +448,7 @@ $('table.plugins').on( 'click', '.psource-help-trigger', function (e) {
 		open_tooltip($(this));
 
 	})
-	.mouseout(close_tooltip)
+	.on("mouseout", close_tooltip)
 ;
 
 

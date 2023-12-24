@@ -658,6 +658,6 @@ jQuery(document).ready( function($) {
     }
   };
 
-  $(window).resize(function(){ tb_position(); });
+  $(window).on("resize", function(){ tb_position(); });
 });
 */
