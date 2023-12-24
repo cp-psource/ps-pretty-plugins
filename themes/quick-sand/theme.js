@@ -160,7 +160,7 @@ jQuery(document).ready(function() {
         jQuery(this).parents('.available-plugin-inner').find('.themedetaildiv').toggle();
     });
     //image hover effect
-    jQuery('a.activate-deactivate').hover(
+    jQuery('a.activate-deactivate').on("hover", 
       function () {
         jQuery(this).closest('.available-plugin-inner').find('a.screenshot').addClass("active");
       },
