@@ -614,7 +614,7 @@ jQuery( document ).ready(
 jQuery(document).ready( function($) {
   // Integrate with WP submenu
   
-  $('#toplevel_page_pretty-plugins li a').click(function(e) {
+  $('#toplevel_page_pretty-plugins li a').on("click", function(e) {
     e.preventDefault();
 
     var category = get_url_parameter($(this).attr('href'));

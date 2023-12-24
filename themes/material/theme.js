@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
   filter_plugins_status('all');
 
   // Executes when the user clicks the category link on the menu
-  jQuery('#plugin-categories-list li a').click(function(e) {
+  jQuery('#plugin-categories-list li a').on("click", function(e) {
     e.preventDefault();
 
     var filterType = jQuery(this).attr('class');
@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
   // Execute when the user clicks on the category link of the plugin card
 
 
-  jQuery('#toplevel_page_pretty-plugins li a').click(function(e) {
+  jQuery('#toplevel_page_pretty-plugins li a').on("click", function(e) {
     var filterType = get_url_parameter(jQuery(this).attr('href'));
 
     if(filterType['page'] == 'pretty-plugins.php') {
@@ -52,7 +52,7 @@ jQuery(document).ready(function() {
   });
 
   // Executes when the user clicks on the status links.
-  jQuery('#plugin-status-list li a').click(function(e) {
+  jQuery('#plugin-status-list li a').on("click", function(e) {
     e.preventDefault();
 
     var filterType = jQuery(this).attr("class");
@@ -199,7 +199,7 @@ jQuery(document).ready(function() {
   }
 
   function activate_plugins_links_js() {
-    jQuery('a.plugin-details').click(function(e) {
+    jQuery('a.plugin-details').on("click", function(e) {
         e.preventDefault();
         jQuery(this).parents('.available-plugin-inner').find('.themedetaildiv').toggle();
     });

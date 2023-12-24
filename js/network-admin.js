@@ -257,9 +257,9 @@ jQuery(document).ready(function() {
 		if (code  == 13) {
 			event.preventDefault();
 			if(jQuery('.plugin-new-edit-category:focus').size() == 1)
-			    jQuery('.category-button:visible').click();
+			    jQuery('.category-button:visible').trigger("click");
 			else
-				jQuery('.plugin-save').click();
+				jQuery('.plugin-save').trigger("click");
 
 			return false;
 		}

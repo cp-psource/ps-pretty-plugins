@@ -29,10 +29,11 @@ Für jedes Plugin wird eine feinere Steuerung bereitgestellt. Als Netzwerkadmini
 Mit PS Pretty Plugins hast Du eine beispiellose Kontrolle über das Aussehen und Verhalten der Plugins-Seite. So können Webseiten-Besitzer ihre Plugins einfacher als je zuvor selbst verwalten und neue Funktionen finden und zu ihrer Webseite hinzufügen.
 
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
-
 [Projektseite](https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/)
 [GitHub](https://github.com/piestingtal-source/ps-pretty-plugins)
+
+
+[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
 == Mehr PSOURCE ==
 
@@ -55,21 +56,25 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == ChangeLog ==
 
-= 1.6.5 = DerN3rd =
+= 1.6.6 =
+
+* Fix: Deprecated .click()
+
+= 1.6.5 =
 
 * Entfernt: Screen icon
 * Fix: Array to string conversion
 * Fix: uasort(): Returning bool
 
-= 1.6.4 = DerN3rd =
+= 1.6.4 =
 
 * Aktuelle Version des PSOURCE Updaters
 
-= 1.6.3 = DerN3rd =
+= 1.6.3 =
 
 * Public release
 
-= 1.6.2 = DerN3rd =
+= 1.6.2 =
 
 * Fix depracated-create_function
 * Übersetzt
