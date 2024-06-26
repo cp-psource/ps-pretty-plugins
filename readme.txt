@@ -1,10 +1,9 @@
 === PS-Pretty Plugins ===
 Contributors: DerN3rd (PSOURCE)
-Donate link: https://github.com/cp-psource/spendenaktionen/unterstuetze-unsere-psource-free-werke/
 Tags: multisite, suche, netzwerksuche
 Requires at least: 4.9
-Tested up to: 4.9
-Stable tag: 1.6.6
+Tested up to: 6.5.5
+Stable tag: 1.6.7
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,32 +28,20 @@ Für jedes Plugin wird eine feinere Steuerung bereitgestellt. Als Netzwerkadmini
 Mit PS Pretty Plugins hast Du eine beispiellose Kontrolle über das Aussehen und Verhalten der Plugins-Seite. So können Webseiten-Besitzer ihre Plugins einfacher als je zuvor selbst verwalten und neue Funktionen finden und zu ihrer Webseite hinzufügen.
 
 
-[Projektseite](https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/)
+[Projektseite](https://cp-psource.github.io/ps-pretty-plugins/)
 [GitHub](https://github.com/piestingtal-source/ps-pretty-plugins)
 
 
-[POWERED BY PSOURCE](https://github.com/cp-psource/psource_kategorien/psource-plugins/)
-
-== Mehr PSOURCE ==
-
-= Finde mehr Piestingtal.Source =
-
-Wirf einen Blick in unser [PSOURCE Sortiment](https://github.com/cp-psource/psource_kategorien/psource-plugins/) und hole noch mehr aus Deinem WordPress/ClassicPress!
-
-Halte Dich mit unserem [Newsletter](https://github.com/cp-psource/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
-
-== Hilf uns ==
-
-Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
-Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
-
-= Unterstütze uns =
-
-Mach eine [Spende per Überweisung oder PayPal](https://github.com/cp-psource/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
-
-Halte Dich mit unserem [Newsletter](https://github.com/cp-psource/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+[POWERED BY PSOURCE](https://github.com/cp-psource/)
 
 == ChangeLog ==
+
+= 1.6.7 =
+
+* Fix: Deprecated Json
+* Fix: Deprecated JQuery
+* Add: Helptabs
+* Update: Psoure Updater 1.3
 
 = 1.6.6 =
 

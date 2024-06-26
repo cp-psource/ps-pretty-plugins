@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: PS-Pretty Plugins
-Plugin URI: https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/
+Plugin URI: https://cp-psource.github.io/ps-pretty-plugins/
 Description: Verleihe Deinen Plugin-Seiten in Multisite-Netzwerken das Aussehen eines App Stores mit ausgewählten Bildern, Kategorien und einer erstaunlichen Suche.
 Author: PSOURCE
 Author URI: https://github.com/cp-psource/
 Network: true
 Text Domain: wmd_prettyplugins
 Domain Path: languages
-Version: 1.6.6
+Version: 1.6.7
 */
 
 /*
@@ -41,7 +41,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 );
  
 //Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
+$myUpdateChecker->setBranch('master');
 
 /**
  * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
