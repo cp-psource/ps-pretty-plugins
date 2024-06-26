@@ -901,8 +901,8 @@ msgstr "Dettagli"
 
 #. Plugin URI of the plugin/theme
 #, fuzzy
-msgid "https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/"
-msgstr "https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/"
+msgid "https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/"
+msgstr "https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/"
 
 #. Description of the plugin/theme
 #, fuzzy
@@ -915,10 +915,10 @@ msgstr ""
 
 #. Author of the plugin/theme
 #, fuzzy
-msgid "WMS N@W"
-msgstr "WMS N@W"
+msgid "PSOURCE"
+msgstr "PSOURCE"
 
 #. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://n3rds.work/"
-msgstr "https://n3rds.work/"
+msgid "https://github.com/cp-psource/"
+msgstr "https://github.com/cp-psource/"

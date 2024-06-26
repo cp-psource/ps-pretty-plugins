@@ -687,7 +687,7 @@ msgid "Details"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/"
+msgid "https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -697,9 +697,9 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "WMS N@W"
+msgid "PSOURCE"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://n3rds.work/"
+msgid "https://github.com/cp-psource/"
 msgstr ""

@@ -1,17 +1,18 @@
 <?php
 /*
 Plugin Name: PS-Pretty Plugins
-Plugin URI: https://n3rds.work/piestingtal-source-project/ps-pretty-plugins/
+Plugin URI: https://github.com/cp-psource/piestingtal-source-project/ps-pretty-plugins/
 Description: Verleihe Deinen Plugin-Seiten in Multisite-Netzwerken das Aussehen eines App Stores mit ausgewählten Bildern, Kategorien und einer erstaunlichen Suche.
-Version: 1.6.6
+Author: PSOURCE
+Author URI: https://github.com/cp-psource/
 Network: true
 Text Domain: wmd_prettyplugins
-Author: WMS N@W
-Author URI: https://n3rds.work/
+Domain Path: languages
+Version: 1.6.6
 */
 
 /*
-Copyright WMS N@W (https://n3rds.work)
+Copyright PSOURCE (https://github.com/cp-psource)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -27,12 +28,24 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-require 'psource/psource-plugin-update/psource-plugin-updater.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=ps-pretty-plugins', 
-	__FILE__, 
-	'ps-pretty-plugins' 
+/**
+ * @@@@@@@@@@@@@@@@@ PS UPDATER 1.3 @@@@@@@@@@@
+ **/
+require 'psource/psource-plugin-update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+ 
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/cp-psource/ps-pretty-plugins',
+	__FILE__,
+	'ps-pretty-plugins'
 );
+ 
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+/**
+ * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
+ **/
 
 
 define( 'PLUGLOOK_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
@@ -84,7 +97,7 @@ class WMD_PrettyPlugins extends WMD_PrettyPlugins_Functions {
 
 				add_action('admin_menu', array($this,'admin_page'), 20);
 				add_action('network_admin_menu', array($this,'network_admin_page'), 20);
-				add_action('contextual_help', array($this,'network_plugins_help'), 10, 2);
+				add_action('load-settings_page_pretty-plugins', array($this, 'network_plugins_help'));
 				add_action( 'network_admin_notices', array($this,'options_page_validate_save_notices') );
 				add_action( 'all_admin_notices', array($this,'plugin_page_notice'), 11 );
 				add_filter('network_admin_plugin_action_links', array($this,'network_admin_plugin_action_links'), 10, 3);
@@ -532,37 +545,38 @@ class WMD_PrettyPlugins extends WMD_PrettyPlugins_Functions {
 			add_submenu_page( 'pretty-plugins.php', $plugins_category, $plugins_category, 'activate_plugins', basename($this->plugin_main_file).'&category='.$plugins_category_key, array($this,'new_plugin_page') );
 	}
 
-	function network_plugins_help($contextual_help, $screen_id) {
-		if($screen_id == 'plugins-network') {
-			//Adds new help tab
-			$screen = get_current_screen();
-			$screen->add_help_tab( array(
-				'id'	=> 'edit_details',
-				'title'	=> __('Plugin-Details bearbeiten', 'wmd_prettyplugins'),
-				'content'	=> '
-					<p>'.sprintf(__( 'Du kannst die Plugin-Details für jedes Plugin bearbeiten, indem Du auf "Details bearbeiten" klickst. Alle neuen Details werden sichtbar auf <a href="%s">der Plugins-Seite</a> und verfügbar für alle Netzwerkseiten. Es ist auch möglich, zusätzliche Einstellungen zu tätigen auf <a href="%s">dieser Seite</a>.','wmd_prettyplugins'),  admin_url('admin.php?page=pretty-plugins.php'), admin_url('network/settings.php?page=pretty-plugins.php')).'</p>
-					<p>'.__( '<strong>Name</strong> - Ersetze den Namen des Plugins durch einen Deiner Wahl. Lasse das Feld leer, um den ursprünglichen Namen zu verwenden.','wmd_prettyplugins').'</p>
-					<p>'.__( '<strong>Eigene URL</strong> - Erstelle einen externen Plugin-Link zu einer beliebigen URL Deiner Wahl, z.B. zur Support-Dokumentation.','wmd_prettyplugins').'</p>
-					<p>'.__( '<strong>Bild URL</strong> - Stelle das angezeigte Bild für dieses Plugin ein. Du kannst ein Bild aus Deiner Mediengalerie auswählen oder die URL der Datei kopieren, die sich unter "wp-content/uploads/prettyplugins/screenshots/" befindet. Alternativ wird eine Datei mit dem richtigen Namen automatisch geladen, auch wenn dieses Feld leer ist (Beispiel: Speicherort des Plugins -  "wp-content/plugins/akismet/akismet.php", image file - "akismet-akismet.png". Nur PNG Dateien funktionieren mit dieser Methode.). Die Einstellung "Screenshot mit korrektem Namen automatisch laden" muss auf "WAHR" gesetzt sein, damit sie funktioniert. Empfohlene Abmessungen sind 600px auf 450px.','wmd_prettyplugins').'</p>
-					<p>'.__( '<strong>Kategorien</strong> - Hier kannst Du Kategorien festlegen, denen das Plugin zugewiesen wird. Nicht verwendete Kategorien werden automatisch gelöscht.','wmd_prettyplugins').'</p>
-					<p>'.__( '<strong>Beschreibung</strong> - Ersetze die ursprüngliche Beschreibung des Plugins durch Deine eigene. Lasse das Feld leer, um das Original zu verwenden.','wmd_prettyplugins').'</p>
-				',
-			) );
-
-
-			//load tooltips for admin plugins page
-			if(!class_exists('PSource_HelpTooltipsDyn'))
-				include($this->plugin_dir.'external/psource-help-tooltips.php');
-			$tips = new PSource_HelpTooltipsDyn();
-			$tips->set_icon_url($this->plugin_dir_url.'images/tooltip.png');
-			$tips->set_use_notice(false);
-
-			$tips->bind_tip(__('Ersetze den Namen des Plugins durch einen Deiner Wahl. Lasse das Feld leer, um den ursprünglichen Namen zu verwenden.', 'wmd_prettyplugins'), '#name_tooltip');
-			$tips->bind_tip(__('Erstelle einen externen Plugin-Link zu einer beliebigen URL Deiner Wahl, z.B. zur Support-Dokumentation.', 'wmd_prettyplugins'), '#custom_url_tooltip');
-			$tips->bind_tip(__('Stelle das angezeigte Bild für dieses Plugin ein. Empfohlene Abmessungen sind 600px zu 450px. Verwende die Registerkarte "Hilfe" (obere rechte Ecke), um Informationen zur erweiterten Verwendung zu erhalten.', 'wmd_prettyplugins'), '#image_url_tooltip');
-			$tips->bind_tip(__('Hier kannst Du Kategorien festlegen, denen das Plugin zugewiesen wird. Nicht verwendete Kategorien werden automatisch gelöscht.', 'wmd_prettyplugins'), '#categories_tooltip');
-			$tips->bind_tip(__('Ersetze die ursprüngliche Beschreibung des Plugins durch Deine eigene. Lasse das Feld leer, um das Original zu verwenden.', 'wmd_prettyplugins'), '#description_tooltip');
+	function network_plugins_help() {
+		$screen = get_current_screen();
+		
+		if ($screen->id != 'settings_page_pretty-plugins-network') {
+			return;
 		}
+	
+		$screen->add_help_tab(array(
+			'id'      => 'edit_details',
+			'title'   => __('Plugin-Details bearbeiten', 'wmd_prettyplugins'),
+			'content' => '
+				<p>' . sprintf(__('Du kannst die Plugin-Details für jedes Plugin bearbeiten, indem Du auf "Details bearbeiten" klickst. Alle neuen Details werden sichtbar auf <a href="%s">der Plugins-Seite</a> und verfügbar für alle Netzwerkseiten. Es ist auch möglich, zusätzliche Einstellungen zu tätigen auf <a href="%s">dieser Seite</a>.', 'wmd_prettyplugins'), admin_url('admin.php?page=pretty-plugins.php'), admin_url('network/settings.php?page=pretty-plugins.php')) . '</p>
+				<p>' . __('<strong>Name</strong> - Ersetze den Namen des Plugins durch einen Deiner Wahl. Lasse das Feld leer, um den ursprünglichen Namen zu verwenden.', 'wmd_prettyplugins') . '</p>
+				<p>' . __('<strong>Eigene URL</strong> - Erstelle einen externen Plugin-Link zu einer beliebigen URL Deiner Wahl, z.B. zur Support-Dokumentation.', 'wmd_prettyplugins') . '</p>
+				<p>' . __('<strong>Bild URL</strong> - Stelle das angezeigte Bild für dieses Plugin ein. Du kannst ein Bild aus Deiner Mediengalerie auswählen oder die URL der Datei kopieren, die sich unter "wp-content/uploads/prettyplugins/screenshots/" befindet. Alternativ wird eine Datei mit dem richtigen Namen automatisch geladen, auch wenn dieses Feld leer ist (Beispiel: Speicherort des Plugins -  "wp-content/plugins/akismet/akismet.php", image file - "akismet-akismet.png". Nur PNG Dateien funktionieren mit dieser Methode.). Die Einstellung "Screenshot mit korrektem Namen automatisch laden" muss auf "WAHR" gesetzt sein, damit sie funktioniert. Empfohlene Abmessungen sind 600px auf 450px.', 'wmd_prettyplugins') . '</p>
+				<p>' . __('<strong>Kategorien</strong> - Hier kannst Du Kategorien festlegen, denen das Plugin zugewiesen wird. Nicht verwendete Kategorien werden automatisch gelöscht.', 'wmd_prettyplugins') . '</p>
+				<p>' . __('<strong>Beschreibung</strong> - Ersetze die ursprüngliche Beschreibung des Plugins durch Deine eigene. Lasse das Feld leer, um das Original zu verwenden.', 'wmd_prettyplugins') . '</p>
+			',
+		));
+	
+		// load tooltips for admin plugins page
+		if (!class_exists('PSource_HelpTooltipsDyn'))
+			include($this->plugin_dir . 'external/psource-help-tooltips.php');
+		$tips = new PSource_HelpTooltipsDyn();
+		$tips->set_icon_url($this->plugin_dir_url . 'images/tooltip.png');
+		$tips->set_use_notice(false);
+	
+		$tips->bind_tip(__('Ersetze den Namen des Plugins durch einen Deiner Wahl. Lasse das Feld leer, um den ursprünglichen Namen zu verwenden.', 'wmd_prettyplugins'), '#name_tooltip');
+		$tips->bind_tip(__('Erstelle einen externen Plugin-Link zu einer beliebigen URL Deiner Wahl, z.B. zur Support-Dokumentation.', 'wmd_prettyplugins'), '#custom_url_tooltip');
+		$tips->bind_tip(__('Stelle das angezeigte Bild für dieses Plugin ein. Empfohlene Abmessungen sind 600px zu 450px. Verwende die Registerkarte "Hilfe" (obere rechte Ecke), um Informationen zur erweiterten Verwendung zu erhalten.', 'wmd_prettyplugins'), '#image_url_tooltip');
+		$tips->bind_tip(__('Hier kannst Du Kategorien festlegen, denen das Plugin zugewiesen wird. Nicht verwendete Kategorien werden automatisch gelöscht.', 'wmd_prettyplugins'), '#categories_tooltip');
+		$tips->bind_tip(__('Ersetze die ursprüngliche Beschreibung des Plugins durch Deine eigene. Lasse das Feld leer, um das Original zu verwenden.', 'wmd_prettyplugins'), '#description_tooltip');
 	}
 
 	function setup_mode_welcome_notice() {
