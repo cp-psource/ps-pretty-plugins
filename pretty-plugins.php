@@ -144,7 +144,7 @@ class WMD_PrettyPlugins extends WMD_PrettyPlugins_Functions {
 			'plugins_hide_descriptions' => '0',
 			'plugins_page_title' => __('Plugins', 'wmd_prettyplugins'),
 			'plugins_page_description' => __('Mit Plugins kannst Du zusätzliche Funktionen auf Deiner Webseite aktivieren! Hier ist eine Liste dessen, was wir für Dich zur Verfügung haben.', 'wmd_prettyplugins'),
-			'plugins_link_label' => __('Erfahre mehr über Plugins', 'wmd_prettyplugins')
+			'plugins_link_label' => __('Mehr Information', 'wmd_prettyplugins')
 		);
 
 		//load options

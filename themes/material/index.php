@@ -70,34 +70,27 @@
 				</a>
 
 
-					<div class="material-plugin-wrapper">
-						<h2><?php echo $plugin['Name']; ?></h2>
-						<p>
-							<?php
-								// strip plugin's excessive text to avoid text overflow
-								$description_trimmed = wp_trim_words($plugin['Description'], $num_words = 35, $more = null);
-								echo $description_trimmed;
-							?>
+				<div class="material-plugin-wrapper">
+					<h2><?php echo $plugin['Name']; ?></h2>
+					<p>
+						<?php
+							// strip plugin's excessive text to avoid text overflow
+							$description_trimmed = wp_trim_words($plugin['Description'], $num_words = 35, $more = null);
+							echo $description_trimmed;
+						?>
 					</p>
 
 
-						<!-- action links -->
-						<div class="material-button-wrapper action-links">
+					<!-- action links -->
+					<div class="material-button-wrapper action-links">
 
-							<!-- Activate/Deactivate Plugin -->
-							<a class="button-primary button button-large material-button material-button-activate" aria-label="Activate/Deactivate button" href="<?php echo $plugin['ActionLink']; ?>"  class="<?php echo $plugin['ActionLinkClass']; ?> activate-deactivate" title="<?php echo $plugin['ActionLinkText'];?>"><?php echo $plugin['ActionLinkText'];?></a>
+						<!-- Activate/Deactivate Plugin -->
+						<a class="button-primary button button-large material-button material-button-activate" aria-label="Activate/Deactivate button" href="<?php echo $plugin['ActionLink']; ?>"  class="<?php echo $plugin['ActionLinkClass']; ?> activate-deactivate" title="<?php echo $plugin['ActionLinkText'];?>"><?php echo $plugin['ActionLinkText'];?></a>
 
-							<!-- Learn More Button -->
-							<?php if(isset($plugin['PluginLink'])) { ?>
-								<a class="material-button button button-large" aria-label="Learn more button" style="color: #000;" href="<?php echo $plugin['PluginLink']; ?>" target="_blank" title="<?php _e('Erfahre mehr über das Plugin', 'wmd_prettyplugins') ?>"><?php echo stripslashes($this->options['plugins_link_label']); ?></a>
-							<?php } ?>
-
-							<!-- Additional action links thrown by some plugins. -->
-							<?php
-							foreach ($plugin['Actions'] as $action) {
-								echo '<span class="material-button button button-large"><a aria-label="Action link button" href="' . esc_url($action) . '">' . esc_html($action) . '</a></span>';
-							}
-							?>
+						<!-- Learn More Button -->
+						<?php if(isset($plugin['PluginLink'])) { ?>
+							<a class="material-button button button-large" aria-label="Learn more button" style="color: #000;" href="<?php echo $plugin['PluginLink']; ?>" target="_blank" title="<?php _e('Erfahre mehr über das Plugin', 'wmd_prettyplugins') ?>"><?php echo stripslashes($this->options['plugins_link_label']); ?></a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>

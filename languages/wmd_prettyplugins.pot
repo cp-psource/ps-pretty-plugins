@@ -313,7 +313,7 @@ msgid ""
 msgstr ""
 
 #: pretty-plugins.php:134
-msgid "Erfahre mehr über Plugins"
+msgid "Mehr Information"
 msgstr ""
 
 #: pretty-plugins.php:143

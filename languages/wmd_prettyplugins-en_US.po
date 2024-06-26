@@ -397,7 +397,7 @@ msgstr ""
 
 #: pretty-plugins.php:134
 #, fuzzy
-msgid "Erfahre mehr über Plugins"
+msgid "Mehr Information"
 msgstr "Learn more about plugins"
 
 #: pretty-plugins.php:143
