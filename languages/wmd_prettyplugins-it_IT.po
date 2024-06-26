@@ -42,7 +42,7 @@ msgstr "Nome originale"
 
 #: includes/element-edit-plugin-details.php:25
 #, fuzzy
-msgid "Benutzerdefinierte URL"
+msgid "Info URL"
 msgstr "URL definito dall'utente"
 
 #: includes/element-edit-plugin-details.php:30

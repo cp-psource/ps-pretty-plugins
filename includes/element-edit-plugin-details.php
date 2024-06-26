@@ -22,7 +22,7 @@
 				</label>
 
 				<label>
-					<span class="title" id="custom_url_tooltip"><?php _e('Benutzerdefinierte URL', 'wmd_prettyplugins');?></span>
+					<span class="title" id="custom_url_tooltip"><?php _e('Info URL', 'wmd_prettyplugins');?></span>
 					<span class="input-text-wrap"><input type="text" class="plugin_custom_url" name="plugin_custom_url" value=""></span>
 				</label>
 

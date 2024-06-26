@@ -28,11 +28,11 @@
 						</ul>				
 					</div>
 				</div>
-				<?php /* if ( isset($plugin['CategoriesNames']) && $plugin['CategoriesNames'] ) { ?>
+				<?php  if ( isset($plugin['CategoriesNames']) && $plugin['CategoriesNames'] ) { ?>
 					<div class="plugin-card-bottom">
 						<strong><?php _e('Categories: ', 'wmd_prettyplugins') ?></strong> <?php echo implode(', ', $plugin['CategoriesNames']);?>
 					</div>
-				<?php } */?>
+				<?php } ?>
 			</div>
 		</div>
 

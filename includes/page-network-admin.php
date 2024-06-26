@@ -52,7 +52,7 @@
 
 				<td>
 					<?php
-					$select_options = array( 'plugin_url' => 'Plugin Original-URL', 'plugin_cutom_url' => 'Plugin benutzerdefinierte URL', 'plugin_url_or_cutom_url' => 'Plugin benutzerdefinierte URL oder ursprüngliche URL', 'disable' => 'Deaktiviert' );
+					$select_options = array( 'plugin_url' => 'Plugin Original-URL', 'plugin_cutom_url' => 'Plugin Info URL', 'plugin_url_or_cutom_url' => 'Plugin Info URL oder ursprüngliche URL', 'disable' => 'Deaktiviert' );
 					?>
 					<select name="wmd_prettyplugins_options[plugins_links]">
 						<?php $this->the_select_options($select_options, $this->options['plugins_links']); ?>

@@ -69,7 +69,7 @@ Nach der Installation und Aktivierung siehst Du in Deinem Menü „Netzwerkeinst
 
 * _Plugin-Original-URL_ verweist auf die URL, die der Plugin-Autor in das Plugin eingefügt hat.
 * _Benutzerdefinierte Plugin-URL_ verweist auf die URLs, die Du für jedes Plugin festgelegt hast (wir werden weiter unten darauf eingehen).
-* _Benutzerdefinierte URL des Plugins oder, falls keine benutzerdefinierte URL vorhanden ist, Original-URL_ bietet Dir das Beste aus beidem: Wenn Du keine benutzerdefinierte URL für ein Plugin eingibst, wird als Link standardmäßig die URL verwendet, die der Autor des Plugins eingefügt hat.
+* _Info URL des Plugins oder, falls keine Info URL vorhanden ist, Original-URL_ bietet Dir das Beste aus beidem: Wenn Du keine Info URL für ein Plugin eingibst, wird als Link standardmäßig die URL verwendet, die der Autor des Plugins eingefügt hat.
 * _Disable_ deaktiviert effektiv alle Plugin-Links.
 
 4\. Hier wählen wir aus, welche Screenshots für Plugins verwendet und angezeigt werden sollen.
@@ -107,7 +107,7 @@ Schauen wir uns nun an, wie Du anpassen kannst, wie einzelne Plugins in der Plug
 
 ![pretty-plugins-1000-edit-details](https://github.com/cp-psource/wp-content/uploads/2023/12/pretty-plugins-1000-edit-details.png)
 
-  Gib einen benutzerdefinierten _Namen_ ein, um den Anzeigenamen des Plugins zu ersetzen. Wenn nichts eingegeben wird, wird wie immer der tatsächliche Name des Plugins angezeigt. Du kannst eine _benutzerdefinierte URL_ eingeben, um die vom Plugin-Autor angegebene URL zu ersetzen. Beachte, dass diese URL nur verwendet wird, wenn Du oben unter _Wähle wohin Plugin Links zeigen_ eine der benutzerdefinierten URL-Anzeigeoptionen ausgewählt hast. Du kannst auch eine benutzerdefinierte _Bild-URL_ hochladen oder darauf verlinken. Dadurch wird das Bild festgelegt, das für dieses Plugin angezeigt wird.
+  Gib einen benutzerdefinierten _Namen_ ein, um den Anzeigenamen des Plugins zu ersetzen. Wenn nichts eingegeben wird, wird wie immer der tatsächliche Name des Plugins angezeigt. Du kannst eine _Info URL_ eingeben, um die vom Plugin-Autor angegebene URL zu ersetzen. Beachte, dass diese URL nur verwendet wird, wenn Du oben unter _Wähle wohin Plugin Links zeigen_ eine der benutzerdefinierten URL-Anzeigeoptionen ausgewählt hast. Du kannst auch eine benutzerdefinierte _Bild-URL_ hochladen oder darauf verlinken. Dadurch wird das Bild festgelegt, das für dieses Plugin angezeigt wird.
 
 * Zum Hochladen kannst Du ein Bild aus Deiner Medienbibliothek auswählen oder den Namen der Datei eingibst, die Du in /wp-content/uploads/prettyplugins/screenshots/ hochgeladen hast.
 * Wenn Du lieber auf ein anderswo gehostetes Bild verlinken möchtest, gib einfach die URL ein.

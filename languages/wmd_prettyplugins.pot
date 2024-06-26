@@ -39,7 +39,7 @@ msgid "Orginal Name"
 msgstr ""
 
 #: includes/element-edit-plugin-details.php:25
-msgid "Benutzerdefinierte URL"
+msgid "Info URL"
 msgstr ""
 
 #: includes/element-edit-plugin-details.php:30
