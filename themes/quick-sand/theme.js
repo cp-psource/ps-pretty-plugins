@@ -605,8 +605,13 @@ Github site: http://github.com/razorjack/quicksand
       $dest.remove();
       if (!options.atomic) {
         options.enhancement($sourceParent); // Perform custom visual enhancements during the animation
-        for (i = 0; i < animationQueue.length; i++) {
-          animationQueue[i].element.animate(animationQueue[i].animation, options.duration, options.easing, postCallback);
+        for (var i = 0; i < animationQueue.length; i++) {
+          var animationOptions = {
+            duration: options.duration,
+            easing: options.easing,
+            complete: postCallback
+          };
+          animationQueue[i].element.animate(animationQueue[i].animation, animationOptions);
         }
       } else {
         $toDelete = $sourceParent.find(options.selector);
