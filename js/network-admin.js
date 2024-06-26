@@ -107,7 +107,7 @@ jQuery(document).ready(function() {
 			};
 
 			jQuery.post(wmd_pl_na.ajax_url, data, function(data){ //post data to specified action trough special WP ajax page
-				data = jQuery.parseJSON(data);
+				data = JSON.parse(data);
 				if(data.error == 0)
 					if(data.name == plugin_new_category) {
 						var plugin_categories_checklist = plugin.edit_row.find('.plugin-categories-checklist');
@@ -120,7 +120,8 @@ jQuery(document).ready(function() {
 
 						prettyplugins_hide_new_edit_form(plugin.edit_row);
 					}
-			});
+				}	
+			);
 		}
 
 		return false;
@@ -166,7 +167,7 @@ jQuery(document).ready(function() {
 			};
 
 			jQuery.post(wmd_pl_na.ajax_url, data, function(data){ //post data to specified action trough special WP ajax page
-				data = jQuery.parseJSON(data);
+				data = JSON.parse(data);
 				if(data.error == 0)
 					if(data.name == plugin_edit_category) {
 						jQuery('.plugin-categories-checklist').find('.category-'+data.id+' .category-name').text(data.name);
@@ -219,7 +220,7 @@ jQuery(document).ready(function() {
 		};
 
 		jQuery.post(wmd_pl_na.ajax_url, data, function(data){
-			data = jQuery.parseJSON(data);
+			data = JSON.parse(data);
 			if(data.error == 0) {
 				plugins_details_array[data.new_details.path] = data.new_details;
 
